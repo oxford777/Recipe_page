@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 1rem;
+    font-family: "Outfit", sans-serif;
     color: hsl(30, 10%, 34%);
     background-color: hsl(30, 54%, 90%);
 }
@@ -16,7 +16,7 @@ div{
 }
 
 h1{
-    font-family: "Young";
+    font-family: "Young", serif;
     color: hsl(24, 5%, 18%);
     font-size: 3rem;
     margin-top: 1.5rem;
@@ -24,7 +24,7 @@ h1{
 }
 
 h2{
-    font-family: "Young";
+    font-family: "Young", serif;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: hsl(14, 45%, 36%);
@@ -89,7 +89,7 @@ ul, ol, li{
     border-top: 1px solid hsl(30, 18%, 87%);
 }
 
-.attribution { 
+.attribution{ 
     font-size: 12px; 
     text-align: center; 
 }
