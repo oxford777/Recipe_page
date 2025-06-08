@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 1rem;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(30, 54%, 90%);
+}
+
+div{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1{
+    font-family: "Young";
+    color: hsl(24, 5%, 18%);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-family: "Young";
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: hsl(14, 45%, 36%);
+}
+
+h4{
+    color: hsl(332, 51%, 32%);
+}
+
+ul, ol, li{
+    padding-left: 1rem;
+}
+
+.layout{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh; /*permet de centrer verticalement */
+    display: flex; /* mettre en colonne*/
+    flex-direction: column; /* mettre en colonne*/
+    justify-content: center; /*centre verticalement*/
+    align-items: center; /*centre horizontalement*/
+    padding: 5rem;
+}
+
+.recipe{
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 1.3rem;
+    padding: 2rem;
+    max-width: 700px;
+    max-height: 100%;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients{
+    line-height: 2rem;
+    
+}
+
+.preparation{
+    background-color:hsl(330, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.instructions{
+    border-top: 1px solid hsl(30, 18%, 87%);
+    line-height: 1.5rem;
+
+}
+
+.nutrition{
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%);    
+}
+
+.description p{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.preparation ul{ /* Enlève les puces par défaut */
+    list-style: none; /*Supprime les puces standards (les ronds noirs)*/
+    padding-left: 0; /*Enlève l'espace à gauche laissé par les puces*/
+    margin-top: 0.5rem; 
+
+}    
+
+.preparation li{ /* espace pour la puce */
+    position: relative; /*Permet d’utiliser position: absolute à l’intérieur de chaque <li> (dans ::before).*/
+    padding-left: 2rem; /*Crée un espace à gauche pour que la puce personnalisée ne se superpose pas au texte.*/ 
+}      
+
+.preparation li::before{ /*Cible un pseudo-élément : un petit bloc ajouté juste avant chaque <li>.*/
+    content: ""; /*Nécessaire pour que le pseudo-élément existe. Ici, pas de texte, juste un bloc vide.*/
+    position: absolute; /*Place la puce absolument à l’intérieur du <li> (qui est en relative).*/
+    top: 1rem; /*centrer verticalement la puce par rapport au texte*/
+    left: 0; /*Positionne la puce à gauche de l’élément.*/
+    width: 5px; /*Définit une petite taille carrée*/
+    height: 5px; /*Définit une petite taille carrée*/
+    background-color: hsl(332, 51%, 32%);
+    border-radius: 50%; /*Rend le carré rond et devient une puce personnalisée ronde*/
+}
+
+.ingredients ul{ 
+    list-style: none; 
+    padding-left: 0; 
+    margin-top: 0.5rem; 
+
+}    
+
+.ingredients li{ /* espace pour la puce */
+    position: relative; /*Permet d’utiliser position: absolute à l’intérieur de chaque <li> (dans ::before)*/
+    padding-left: 2rem; /*Crée un espace à gauche pour que la puce personnalisée ne se superpose pas au texte.*/ 
+}      
+
+.ingredients li::before{
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(14, 45%, 36%);
+}
+
+.instructions li{
+    margin-bottom: 0.5rem;
+}
+
+.instructions ol {
+  list-style: decimal; /* Active les numéros */
+  padding-left: 1rem; /* Espace à gauche pour les numéros */
+}
+
+.instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold; 
+}
+
+.nutrition p{
+    margin-bottom: 1rem; /* Ajoute un espace sous le paragraphe, pour aérer avant le tableau*/ 
+}
+
+.nutrition table {
+    width: 100%; /* Le tableau prend toute la largeur disponible du conteneur*/
+    border-collapse: collapse; /*Colle les bordures entre les cellules, au lieu de les espacer.*/
+    margin-top: 1rem; /*Ajoute de l’espace au-dessus du tableau*/
+}
+
+.nutrition tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%); /* bordure gris clair en bas*/
+}
+
+.nutrition th, .nutrition td {
+  text-align: left;
+  padding: 1rem; /*Ajoute de l’espace intérieur (haut/bas/gauche/droite) dans chaque cellule*/
+}
+
+.nutrition td {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold; /* chiffres en gras*/
+  padding-right: 2rem;
+}
+
+.nutrition th {
+  font-weight: normal;
+  padding-left: 2rem;
+}
+
+
+
+
+
+
+
+
+   
