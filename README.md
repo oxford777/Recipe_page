@@ -24,8 +24,8 @@ Voici un aperçu du résultat final :
 
  🔗 Liens utiles
 
-- 💻 Code source : [Voir sur GitHub](https://github.com/oxford777/recipe-page)
-- 🌍 Site en ligne : [Voir le site en direct](https://oxford777.github.io/recipe-page/)
+- 💻 Code source : [Voir sur GitHub](https://github.com/oxford777/Recipe_page)
+- 🌍 Site en ligne : [Voir le site en direct](https://oxford777.github.io/Recipe_page/)
 
 
 ## 🛠️ Outils que j’ai utilisés
